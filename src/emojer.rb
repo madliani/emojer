@@ -69,7 +69,7 @@ class Emojer
       program_ptr += 1
     end
 
-    code.join("")
+    code.join.freeze
   end
 
   def compile
