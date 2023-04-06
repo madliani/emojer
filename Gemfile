@@ -12,4 +12,5 @@ group :production do
 end
 
 group :test do
+  gem "rspec", require: true
 end
