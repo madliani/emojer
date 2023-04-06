@@ -1,0 +1,10 @@
+require:
+  - rubocop-performance
+  - rubocop-thread_safety
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: "never"
+
+Style/StringLiterals:
+  EnforcedStyle: "double_quotes"
+  ConsistentQuotesInMultiline: true
