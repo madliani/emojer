@@ -1,7 +1,7 @@
 jobs:
   test:
     env:
-      BUNDLE_GEMFILE: ${{ github.workspace }}/gemfiles/${{ matrix.gemfile }}.gemfile
+      BUNDLE_GEMFILE: ${{ github.workspace }}/${{ matrix.gemfile }}
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        gemfile: [rspec]
+        gemfile: ["Gemfile"]
         os: [ubuntu-latest]
         ruby: ["3.2.2", truffleruby]
 
