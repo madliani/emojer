@@ -7,7 +7,7 @@ jobs:
         with:
           bundler-cache: true
           cache-version: 1
-          ruby-version: ${{ matrix.ruby-version }}
+          ruby-version: ${{ matrix.ruby }}
       - run: bundle exec rake
     strategy:
       fail-fast: false
