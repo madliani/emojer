@@ -1,5 +1,7 @@
 jobs:
   test:
+    env:
+      BUNDLE_GEMFILE: ${{ github.workspace }}/gemfiles/${{ matrix.gemfile }}.gemfile
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
@@ -8,11 +10,12 @@ jobs:
           bundler-cache: true
           cache-version: 1
           ruby-version: ${{ matrix.ruby }}
-      - run: bundle exec rake
+      - run: rake test
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        gemfile: [rspec]
+        os: [ubuntu-latest]
         ruby: ["3.2.2", truffleruby]
 
 name: Ruby
