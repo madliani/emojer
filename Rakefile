@@ -3,7 +3,7 @@
 task default: [:build]
 
 task :build do
-  sh "ruby --enable-frozen-string-literal src/app.rb"
+  sh "ruby --enable-frozen-string-literal --jit src/app.rb"
 end
 
 task :format do

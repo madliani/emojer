@@ -16,7 +16,7 @@ jobs:
       matrix:
         gemfile: ["Gemfile"]
         os: [ubuntu-latest]
-        ruby: ["3.2.2", truffleruby]
+        ruby: ["3.2.2"]
 
 name: Ruby
 
