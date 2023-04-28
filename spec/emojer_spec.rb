@@ -1,5 +1,3 @@
-require "rspec/autorun"
-
 require_relative "../src/emojer"
 
 HELLO_WORLD = ":> :- :- :- :> :- :- :- :> :- :- :- :> :+" \
