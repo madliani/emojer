@@ -11,7 +11,7 @@
 
 This is a compiler for the Brainf\*ck programming language dialect with an emoji-like command system.
 
-## Available Scripts
+## Usage
 
 In the project directory, you can run:
 
@@ -31,15 +31,11 @@ Runs the code linters.
 
 Launches the test runner.
 
-## Authors
+## Contributors
 
-Rakhman Abdurakhmanov - [Portfolio](https://crystallographer.github.io) |
-[GitHub](https://github.com/crystallographer).
+- [Rakhman Abdurakhmanov](https://crystallographer.github.io) - creator and maintainer.
+
+## Authoring
 
 Based on articles [Let’s Write a Brainfuck Compiler (in JavaScript)](https://itnext.io/lets-write-a-brainfuck-compiler-aaa7cfd449b0) by
 [Michele Riva](https://micheleriva.medium.com), [Интерпретатор brainfuck](https://pythonworld.ru/primery-programm/interpretator-brainfuck.html) and [Little Lisp interpreter](https://maryrosecook.com/blog/post/little-lisp-interpreter) by [Mary Rose Cook](https://maryrosecook.com).
-
-## License
-
-The MIT License - [Open Source Initiative](https://opensource.org/license/mit) |
-[Free Software Directory](https://directory.fsf.org/wiki/License:Expat).
