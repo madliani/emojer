@@ -1,8 +1,8 @@
 #!/usr/bin/env rake
 
-task default: [:build]
+task default: [:run]
 
-task :build do
+task :run do
   sh "ruby --enable-frozen-string-literal --jit src/app.rb"
 end
 
