@@ -1,3 +1,5 @@
+require "rspec"
+
 require_relative "../src/emojer"
 
 HELLO_WORLD = ":> :- :- :- :> :- :- :- :> :- :- :- :> :+" \
@@ -30,7 +32,7 @@ BE_A_LIGHT_TO_OTHERS = ":> :- :- :- :> :- :- :- :> :- :- :- :> :+" \
 ":< :+ :+ :+ :+ :+ :+ :+ :> :] :< :+ :+ :+" \
 ":[ :. :> :] :< :]".freeze
 
-describe Emojer do
+RSpec.describe Emojer do
   it "Test #1" do
     emojer = Emojer.new HELLO_WORLD
 
