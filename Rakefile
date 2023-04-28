@@ -17,5 +17,5 @@ task :lint do
 end
 
 task :test do
-  sh "ruby --enable-frozen-string-literal specs/app.spec.rb"
+  sh "ruby --enable-frozen-string-literal spec/app.spec.rb"
 end
