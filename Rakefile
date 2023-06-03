@@ -11,11 +11,13 @@ task :format do
 end
 
 task :lint do
-  sh "bundle exec fasterer src spec"
-  sh "bundle exec reek src spec"
-  sh "bundle exec rubocop -a -wc src spec"
+  sh "bundle exec rubocop -a -l src spec"
+end
+
+task :typecheck do
+  sh "bundle exec srb tc src spec"
 end
 
 task :test do
-  sh "rspec"
+  sh "bundle exec rspec"
 end

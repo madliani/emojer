@@ -1,13 +1,5 @@
 require:
   - rubocop-performance
+  - rubocop-rspec
   - rubocop-thread_safety
-
-AllCops:
-  NewCops: enable
-
-Style/FrozenStringLiteralComment:
-  EnforcedStyle: "never"
-
-Style/StringLiterals:
-  ConsistentQuotesInMultiline: true
-  EnforcedStyle: "double_quotes"
+  - standard
