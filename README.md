@@ -1,7 +1,7 @@
 # Emojer
 
 <div align="center">
-    <img src="./assets/icons/emoji.png" alt="Emojer logo" />
+    <img src="./assets/icons/emoji.png" alt="Emojer logo" with="192" height="192" />
 
     The Emoji Compiler
 
