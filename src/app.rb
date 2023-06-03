@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env ruby --enable-frozen-string-literal --jit
 
 require "bundler/setup"
 require "rubygems"
