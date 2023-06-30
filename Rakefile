@@ -2,6 +2,10 @@
 
 task default: [:run]
 
+task :doc do
+  sh "rdoc"
+end
+
 task :run do
   sh "ruby --enable-frozen-string-literal --jit src/app.rb"
 end
@@ -12,10 +16,6 @@ end
 
 task :lint do
   sh "bundle exec rubocop -a -l src spec"
-end
-
-task :typecheck do
-  sh "bundle exec srb tc src spec"
 end
 
 task :test do
