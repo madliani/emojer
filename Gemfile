@@ -5,7 +5,7 @@ group :development do
   gem "rubocop-rspec", require: false
   gem "rubocop-thread_safety", require: false
   gem "rubocop", require: false
-  gem "standardrb", require: false
+  gem "standard", require: false
 end
 
 group :production do
