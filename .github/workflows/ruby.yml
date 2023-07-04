@@ -20,7 +20,7 @@ jobs:
       fail-fast: false
       matrix:
         gemfile: ["Gemfile"]
-        os: [ubuntu-latest]
+        os: [macos-latest, ubuntu-latest, windows-latest]
         ruby: ["3.2.2"]
 
 name: Ruby
