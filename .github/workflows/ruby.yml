@@ -1,3 +1,7 @@
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.ref }}
+
 jobs:
   test:
     env:
@@ -10,7 +14,8 @@ jobs:
           bundler-cache: true
           cache-version: 1
           ruby-version: ${{ matrix.ruby }}
-      - run: rake
+      - run: bundle install
+      - run: bundle exec rake test
     strategy:
       fail-fast: false
       matrix:
@@ -25,6 +30,7 @@ on:
     branches: ["main"]
   push:
     branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
