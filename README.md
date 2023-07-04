@@ -7,7 +7,7 @@
 
 </div>
 
-![Built with Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
+![Built with Ruby](https://img.shields.io/badge/Ruby-CC342D.svg?style=for-the-badge&logo=Ruby&logoColor=white)
 
 This is a compiler for the Brainf\*ck programming language dialect with an emoji-like command system.
 

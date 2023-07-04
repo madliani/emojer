@@ -14,8 +14,8 @@ jobs:
           bundler-cache: true
           cache-version: 1
           ruby-version: ${{ matrix.ruby }}
-      - run: bundle install
-      - run: bundle exec rake test
+      - run: bundle
+      - run: rake test
     strategy:
       fail-fast: false
       matrix:
