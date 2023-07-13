@@ -1,11 +1,11 @@
 # Emojer
 
-<div align="center">
+<p align="center">
     <img src="./assets/icons/emoji.png" alt="Emojer logo" with="192" height="192" />
 
     The Emoji Compiler
 
-</div>
+</p>
 
 ![Built with Ruby](https://img.shields.io/badge/Ruby-CC342D.svg?style=for-the-badge&logo=Ruby&logoColor=white)
 
@@ -30,10 +30,6 @@ Runs the code linters.
 ### `rake test`
 
 Launches the test runner.
-
-## Contributors
-
-- [Rakhman Abdurakhmanov](https://crystallographer.github.io) - creator and maintainer.
 
 ## Authoring
 
