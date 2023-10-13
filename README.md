@@ -15,17 +15,25 @@ This is a compiler for the Brainf\*ck programming language dialect with an emoji
 
 In the project directory, you can run:
 
-### `rake build`
+### `rake doc`
 
-Runs the app.
+Runs the documentation tool.
 
 ### `rake format`
 
 Runs the code formatter.
 
+### `rake install`
+
+Installs the dependencies.
+
 ### `rake lint`
 
-Runs the code linters.
+Launches the code linters.
+
+### `rake run`
+
+Runs the app.
 
 ### `rake test`
 
