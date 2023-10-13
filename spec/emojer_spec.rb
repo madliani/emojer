@@ -33,15 +33,21 @@ BE_A_LIGHT_TO_OTHERS = ":> :- :- :- :> :- :- :- :> :- :- :- :> :+" \
                        ":[ :. :> :] :< :]".freeze
 
 RSpec.describe Emojer do
-  it "Test #1" do
-    emojer = Emojer.new HELLO_WORLD
+  subject do
+    Emojer.new HELLO_WORLD
+  end
 
-    expect(emojer.compile).to eq "Hello, World!"
+  it "Test #1" do
+    expect(subject.compile).to eq "Hello, World!"
+  end
+end
+
+RSpec.describe Emojer do
+  subject do
+    Emojer.new BE_A_LIGHT_TO_OTHERS
   end
 
   it "Test #2" do
-    emojer = Emojer.new BE_A_LIGHT_TO_OTHERS
-
-    expect(emojer.compile).to eq "Be a light to others:)"
+    expect(subject.compile).to eq "Be a light to others:)"
   end
 end
