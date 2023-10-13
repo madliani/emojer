@@ -3,3 +3,6 @@ require:
   - rubocop-rspec
   - rubocop-thread_safety
   - standard
+
+AllCops:
+  NewCops: enable
